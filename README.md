@@ -1,4 +1,4 @@
-# Generate React mixins that can leverage context
+# Generate React mixins that can leverage context [![Build Status](https://travis-ci.org/JaapRood/react-app-context-mixin.svg?branch=master)](https://travis-ci.org/JaapRood/react-app-context-mixin)
 
 Sometimes when writing certain types of mixins you want to leverage React's undocumentend 'context'. Although props and state should always be your choice, every now and then you run into situations where that's just impractical. Use this function to create mixins that will safely store you context under one, easy to change prop.
 
