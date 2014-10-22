@@ -1,6 +1,6 @@
 {
   "name": "react-app-context-mixin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create a mixin for React that will transport your definition of your app's context over a prop of your choosing",
   "main": "index.js",
   "scripts": {
@@ -15,6 +15,11 @@
     "name": "Jaap van Hardeveld",
     "email": "jaap@jaaprood.nl",
     "url": "http://jaaprood.nl"
+  },
+  "homepage": "https://github.com/jaaprood/react-app-context-mixin",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaaprood/react-app-context-mixin.git"
   },
   "license": "ISC",
   "dependencies": {
