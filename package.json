@@ -1,0 +1,27 @@
+{
+  "name": "react-app-context-mixin",
+  "version": "1.0.0",
+  "description": "Create a mixin for React that will transport your definition of your app's context over a prop of your choosing",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js | tap-spec"
+  },
+  "keywords": [
+    "react",
+    "react-mixin",
+    "context"
+  ],
+  "author": {
+    "name": "Jaap van Hardeveld",
+    "email": "jaap@jaaprood.nl",
+    "url": "http://jaaprood.nl"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.11.2"
+  },
+  "devDependencies": {
+    "tap-spec": "^1.0.1",
+    "tape": "^3.0.1"
+  }
+}
