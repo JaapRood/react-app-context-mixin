@@ -23,7 +23,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "react": "^0.11.2"
+    "react": "0.11.x || 0.12.x"
   },
   "devDependencies": {
     "tap-spec": "^1.0.1",
