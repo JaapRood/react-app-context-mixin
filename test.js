@@ -69,6 +69,7 @@ test('uses context inherited through component context when available', function
 	t.equals(mixin.getAppContext(), existingContext, 'no creating of a new context when context passed through props');
 });
 
+
 test("Uses a simple object when not defining a 'getNewAppContext' function and 'app' as prop by default", function(t) {
 	t.plan(2);
 
@@ -81,4 +82,18 @@ test("Uses a simple object when not defining a 'getNewAppContext' function and '
 	t.deepEquals(mixin.getAppContext(), {}, 'simple object used by default');
 	t.equals(typeof mixin.getChildContext()['app'], 'object', "using 'app' prop by default");
 
+});
+
+test("sets newly created contexts to the component's context for future use and prevents creating new one again", function(t) {
+	t.plan(2);
+
+	var mixin = createMixin();
+
+	// mock props and context
+	mixin.props = {};
+	mixin.context = {};
+
+	var createdContext = mixin.getAppContext();
+	t.equals(mixin.context.app, createdContext, 'created context is set on context');
+	t.equals(mixin.getAppContext(), createdContext, 'context only created once');
 });

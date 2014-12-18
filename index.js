@@ -37,7 +37,8 @@ function createMixin(getNewAppContext, prop) {
             } else if (this.context[prop]) {
                 return this.context[prop];
             } else {
-                return getNewAppContext(this.props);
+                var newContext = this.context[prop] = getNewAppContext(this.props);
+                return newContext;
             }
         },
 
