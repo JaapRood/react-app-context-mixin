@@ -1,6 +1,6 @@
 {
   "name": "react-app-context-mixin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Create a mixin for React that will transport your definition of your app's context over a prop of your choosing",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "react": "0.11.x || 0.12.x"
+    "react": "0.11.x || 0.12.x || 0.13.x"
   },
   "devDependencies": {
     "tap-spec": "^1.0.1",
